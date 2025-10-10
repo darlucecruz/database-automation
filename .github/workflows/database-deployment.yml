@@ -11,6 +11,8 @@ on:
       server_name:
         required: true
         default: 'Server Name'
+      enviroment:
+        type: enviroment
       almoco:
         type: boolean
         description: 'Francesinha hoje?'
@@ -48,3 +50,4 @@ jobs:
           echo "O nome do servidor: ${{ github.events.input.server_name }}"
           pwd
           ls -l
+          sed 's/.secret-file/.secret-file${{ secrets.DBUSER }}/' dotfile-secret.yml
