@@ -11,8 +11,8 @@ on:
       server_name:
         required: true
         default: 'Server Name'
-      enviroment:
-        type: enviroment
+      environment:
+        type: environment
       almoco:
         type: boolean
         description: 'Francesinha hoje?'
