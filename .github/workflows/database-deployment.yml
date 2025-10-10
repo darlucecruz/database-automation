@@ -46,6 +46,5 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           echo "O nome do servidor: ${{ github.events.input.server_name }}"
-          ping ${{ github.events.input.server_name }}
           pwd
           ls -l
